@@ -7,3 +7,8 @@
 |  100,000 |0.027524688048288226|0.1898588660005771
 | 1,000,000 |0.27050671295728534|1.9154432000013912
 |10,000,000 |2.7073497190140188|19.21548801999961
+
+It looks like my MBP runs integer computations in python about 7 times as fast as the RPi 3.
+
+MBP running El Capitan 10.11.3
+2.6 GHz Intel Cor i7, 8 GB 1600 Mhz DDR3 
