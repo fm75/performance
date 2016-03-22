@@ -3,11 +3,13 @@
 import timeit
 
 experiments = [ 1000, 10000, 100000, 1000000, 10000000 ]
- 
+
+
 def wrapper (func, *args, **kwargs):
     def wrapped ():
         return func (*args, **kwargs)
     return wrapped
+
 
 def doitn (n):
     t = 0
@@ -18,6 +20,7 @@ def doitn (n):
 funcs = list ()
 for n in experiments:
    funcs.append ((n, (wrapper(doitn, n))))
+
 
 def doit ():
     for (n,func) in funcs:
