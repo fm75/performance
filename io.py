@@ -11,19 +11,18 @@ def wrapper(func, *args, **kwargs):
 
 
 def doitn(n):
-    t = 0
-    for i in range(n + 1):
-        t += i
-    return t
+    with open (str(n)+'.txt', 'w') as f:
+        for _ in range (n):
+            f.write ('{}\n'.format ('a' * 100))
 
 
 def doit():
-    experiments = [1000, 10000, 100000, 1000000, 10000000]
+    experiments = [1000, 10000, 100000, 1000000]
     funcs = list()
     for n in experiments:
         funcs.append((n, (wrapper(doitn, n))))
-        for (n, func) in funcs:
-            print ('{:>8} {}'.format(n, min(timeit.repeat(func, repeat=2, number=3))))
+    for (n, func) in funcs:
+        print ('{:>8} {}'.format(n, timeit.timeit (func, number=1)))
 
 
 if __name__ == '__main__':
