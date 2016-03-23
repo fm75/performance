@@ -10,5 +10,16 @@
 
 It looks like my MBP runs integer computations in python about 7 times as fast as the RPi 3.
 
-MBP running El Capitan 10.11.3
-2.6 GHz Intel Cor i7, 8 GB 1600 Mhz DDR3 
+|101 byte lines written| Macbook Pro | Raspberry Pi 3
+|---:|---|---
+|    1,000 |0.0.00718|0.00226
+|  10,000 |0.0489|0.0118
+|  100,000 |0.463|0.152
+| 1,000,000 |5.47|1.13
+
+
+
+rMBP (Mid 2012) 
+running El Capitan 10.11.3
+2.6 GHz Intel Cor i7 
+8 GB 1600 Mhz DDR3 
