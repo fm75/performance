@@ -17,6 +17,8 @@ It looks like my MBP runs integer computations in python about 7 times as fast a
 |  100,000 |0.463|0.152
 | 1,000,000 |5.47|1.13
 
+Writing to disk is only about 4 times as fast
+
 
 
 rMBP (Mid 2012) 
