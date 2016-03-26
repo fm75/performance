@@ -18,7 +18,7 @@ def doitn(n):
 
 
 def doit():
-    experiments = [1000, 10000, 100000, 1000000, 10000000]
+    experiments = [1000, 10000, 100000, 1000000]
     funcs = list()
     for n in experiments:
         funcs.append((n, (wrapper(doitn, n))))
