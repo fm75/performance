@@ -23,8 +23,6 @@ def doit():
     for n in experiments:
         funcs.append((n, (wrapper(doitn, n))))
     for (n, func) in funcs:
-        funcs.append((n, (wrapper(doitn, n))))
-    for (n, func) in funcs:
         print ('{:>8} {}'.format(n, min(timeit.repeat(func, repeat=2, number=3))))
 
 
