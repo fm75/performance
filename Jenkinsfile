@@ -3,7 +3,7 @@ node
   stage 'Checkout'
     git url: 'https://github.com/fm75/performance/'
     
-  stage "Environment"
+  stage 'Environment'
     sh 'env'
 
   stage 'CPU Test'
