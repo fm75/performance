@@ -7,11 +7,9 @@ node
     sh 'env'
 
   stage 'CPU Test'
-    sh 'pwd'
     sh './cpu.py'
     //sh '/var/lib/jenkins/jobs/SpeedPipe/workspace/cpu.py'
    
   stage 'I/O Test'
-    sh 'ls -l'
-    //sh '/var/lib/jenkins/jobs/SpeedPipe/workspace/io.py'
+    sh './io.py'
   }
