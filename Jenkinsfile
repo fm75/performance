@@ -11,5 +11,6 @@ node
     //sh '/var/lib/jenkins/jobs/SpeedPipe/workspace/cpu.py'
    
   stage 'I/O Test'
-    sh '/var/lib/jenkins/jobs/SpeedPipe/workspace/io.py'
+    sh 'ls -l'
+    //sh '/var/lib/jenkins/jobs/SpeedPipe/workspace/io.py'
   }
