@@ -36,7 +36,8 @@ node
     }
 
   stage 'Checkout'
-    git url: 'https://github.com/fm75/performance/'
+    //git url: 'https://github.com/fm75/performance/'
+    sh 'env'
     
   stage 'Unit Tests'
     sh 'env'
