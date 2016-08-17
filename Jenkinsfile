@@ -31,7 +31,7 @@ node
     sh './io.py'
     
   stage 'Commit to Master Branch'
-    timeout(time:5, unit:'DAYS') {
+    timeout(time:5, unit:'HOURS') {
     input message:'Approve deployment?', submitter: 'fred'
     }
 
